@@ -1,7 +1,8 @@
-
+#!/bin/bash
+set -e
 
 DIR="$1"
 
 echo "Size(KB)  Path"
 
-find "$DIR" -type d -exec du -s {} + | sort -nr | head -n 5
+find "$DIR" -type d -exec du -s {} + | sort -nr | head -n 4
